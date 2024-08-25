@@ -12,27 +12,20 @@ function Nav() {
           <input
             type="search"
             placeholder="Search products..."
-            className="w-full rounded-md bg-white-100/20 pl-8 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full rounded-md bg-gray-200 pl-8 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-          <SearchIcon className="absolute left-2 top-1/2 -translate-y-1/2 w-4 h-4 text-white" />
+          <SearchIcon className="absolute left-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600" />
         </div>
         <div className="flex items-center gap-4">
+          {/* Shopping Cart Button */}
           <button className="flex items-center gap-2 rounded-full px-3 py-1 border border-transparent bg-blue-500 text-white hover:bg-blue-700">
-            <span className="text-xs font-medium">24/7</span>
-            <LoginIcon className="w-5 h-5" />
-            <span className="sr-only">Need Help</span>
-          </button>
-          <button className="flex items-center gap-2 rounded-full px-3 py-1 border border-transparent bg-blue-500 text-white hover:bg-blue-700">
-            <ShoppingCartIcon className="w-5 h-5" />
+            <ShoppingCartIcon className="w-6 h-6 text-white" />
             <span className="sr-only">Shopping Cart</span>
           </button>
-          <Link to="/login" className="flex items-center gap-2 text-white hover:text-blue-200">
-            <LoginIcon className="w-5 h-5" />
+          {/* Login Link */}
+          <Link to="/login" className="flex items-center gap-2 text-blue-600 hover:text-blue-800">
+            <LoginIcon className="w-6 h-6 text-blue-600" />
             <span className="sr-only">Login</span>
-          </Link>
-          <Link to="/register" className="flex items-center gap-2 text-white hover:text-blue-200">
-            <RegisterIcon className="w-5 h-5" />
-            <span className="sr-only">Register</span>
           </Link>
         </div>
       </div>
@@ -85,35 +78,10 @@ function LoginIcon(props) {
     <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      viewBox="0 0 448 512"
+      fill="currentColor"
     >
-      <path d="M15 12h6M15 12l4-4M15 12l4 4M2 12v-1a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v1" />
-    </svg>
-  );
-}
-
-function RegisterIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M14 2h6a2 2 0 0 1 2 2v6M6 2H2a2 2 0 0 0-2 2v6M6 22H2a2 2 0 0 1-2-2v-6M22 2v6a2 2 0 0 1-2 2h-6M12 22v-6M12 22H6a2 2 0 0 1-2-2v-6M22 22v-6a2 2 0 0 0-2-2h-6" />
+      <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
     </svg>
   );
 }
